@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo/types",
+  "version": "1.0.0",
+  "description": "Interfaces et types partagés pour Nuxt et AdonisJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

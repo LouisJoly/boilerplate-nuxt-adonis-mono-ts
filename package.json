@@ -1,0 +1,20 @@
+{
+  "name": "boilerplate-nuxt-adonis-mono-ts",
+  "version": "1.0.0",
+  "description": "Boilerplate Full-Stack Nuxt 3 / AdonisJS 6 avec pnpm Workspaces",
+  "private": true,
+  "scripts": {
+    "dev:front": "pnpm --filter front dev",
+    "dev:back": "pnpm --filter back dev",
+    "dev:types": "pnpm --filter @monorepo/types watch",
+    "install:all": "pnpm install"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "vue": "latest"
+    }
+  }
+}
