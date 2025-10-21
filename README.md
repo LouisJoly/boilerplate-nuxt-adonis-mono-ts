@@ -50,32 +50,23 @@ Avant de commencer, assurez-vous d'avoir installé :
    pnpm install
    ```
 
-## 🚦 Démarrage Rapide
+## 🛠️ Vérification et Construction des Packages
 
-### Développement local
+Avant de démarrer le développement, assurez-vous que les packages front et back peuvent être construits sans erreur. Cela évite les problèmes lors du démarrage en mode développement.
 
-#### Lancer le frontend (Nuxt 3)
+### Construire le frontend (Nuxt 3)
 ```bash
-cd apps/front
-pnpm dev
-```
-### ET
-
-#### Lancer le backend (AdonisJS 6)
-```bash
-cd apps/back
-pnpm dev
+pnpm --filter front build
 ```
 
-### Commandes utiles
+### Construire le backend (AdonisJS 6)
+```bash
+pnpm --filter back build
+```
 
-| Commande | Description |
-|----------|-------------|
-| `pnpm install` | Installe toutes les dépendances du monorepo |
-| `pnpm -r --filter "./apps/*" build` | Construit toutes les applications |
-| `pnpm -r --filter "./apps/*" test` | Exécute les tests de toutes les applications |
+Si une construction échoue, vérifiez les erreurs de dépendances ou de configuration avant de continuer.
 
-## 📁 Structure Détaillée
+##  Structure Détaillée
 
 ### Répertoire Racine
 - `apps/` - Contient les applications frontend et backend
